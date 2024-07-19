@@ -1,4 +1,3 @@
-
 CREATE TABLE Students (
     StudentID INT PRIMARY KEY,
     FirstName VARCHAR(50),
@@ -6,7 +5,6 @@ CREATE TABLE Students (
     ClassID INT,
     FOREIGN KEY (ClassID) REFERENCES Classes(ClassID)
 );
-
 CREATE TABLE Teachers (
     TeacherID INT PRIMARY KEY,
     FirstName VARCHAR(50),
@@ -20,17 +18,14 @@ CREATE TABLE Courses (
     DepartmentID INT,
     FOREIGN KEY (DepartmentID) REFERENCES Departments(DepartmentID)
 );
-
 CREATE TABLE Departments (
     DepartmentID INT PRIMARY KEY,
     DepartmentName VARCHAR(100)
 );
-
 CREATE TABLE Classes (
     ClassID INT PRIMARY KEY,
     ClassName VARCHAR(50)
 );
-
 CREATE TABLE StudentCourses (
     StudentID INT,
     CourseID INT,
@@ -38,7 +33,6 @@ CREATE TABLE StudentCourses (
     FOREIGN KEY (StudentID) REFERENCES Students(StudentID),
     FOREIGN KEY (CourseID) REFERENCES Courses(CourseID)
 );
-
 CREATE TABLE TeacherCourses (
     TeacherID INT,
     CourseID INT,
@@ -46,7 +40,6 @@ CREATE TABLE TeacherCourses (
     FOREIGN KEY (TeacherID) REFERENCES Teachers(TeacherID),
     FOREIGN KEY (CourseID) REFERENCES Courses(CourseID)
 );
-
 INSERT INTO Departments (DepartmentID, DepartmentName) VALUES (1, 'Mathematics');
 INSERT INTO Departments (DepartmentID, DepartmentName) VALUES (2, 'Science');
 
