@@ -1,0 +1,19 @@
+Create a file:
+touch myfile.txt
+
+Write text into the file:
+echo "This is some sample text." > myfile.txt
+
+Open the file in different formats:
+
+Open in a text editor like nano:
+nano myfile.txt
+
+View the content with cat:
+cat myfile.txt
+
+View the content with less:
+less myfile.txt
+
+Delete the file:
+rm myfile.txt
