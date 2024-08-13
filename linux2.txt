@@ -1,0 +1,11 @@
+touch myfile.txt
+
+chmod 744 myfile.txt
+
+chmod 664 myfile.txt
+
+chmod 700 myfile.txt
+
+chmod 444 myfile.txt
+
+nano myfile.txt
