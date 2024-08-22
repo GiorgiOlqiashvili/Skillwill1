@@ -1,0 +1,24 @@
+echo "Hello! What is your name?"
+read name
+
+echo "Nice to meet you, $name! How are you feeling today? (good/bad)"
+read mood
+
+if [ "$mood" = "good" ]; then
+    echo "I'm glad to hear you're feeling good, $name!"
+elif [ "$mood" = "bad" ]; then
+    echo "I'm sorry to hear that, $name. I hope your day gets better."
+else
+    echo "I didn't understand your response, but I hope you have a great day, $name!"
+fi
+
+echo "Do you like programming? (yes/no)"
+read programming
+
+if [ "$programming" = "yes" ]; then
+    echo "That's awesome, $name! Keep coding!"
+elif [ "$programming" = "no" ]; then
+    echo "No worries, $name. Everyone has different interests!"
+else
+    echo "I didn't quite get that, but I hope you find something you enjoy doing!"
+fi
