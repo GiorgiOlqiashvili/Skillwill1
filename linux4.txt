@@ -1,0 +1,15 @@
+    # ფოლდერის შექმნა
+mkdir my_directory
+
+    # ფაილების შექმნა
+touch my_directory/file1.txt
+touch my_directory/file2.txt
+touch my_directory/file3.txt
+
+    # ფაილში მონაცემების ჩაწერა
+echo "Hello, this is file1" > my_directory/file1.txt
+echo "Hello, this is file2 with special content" > my_directory/file2.txt
+echo "Just some random text in file3" > my_directory/file3.txt
+
+    # grep ბრძანებით კონკრეტული ფაილების მოძებნა რეგურალური გამონათქვამების გამოყენებით
+grep -l "special content" my_directory/*.txt
